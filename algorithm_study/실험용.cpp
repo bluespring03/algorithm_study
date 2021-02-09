@@ -11,5 +11,7 @@ using namespace std;
 int main(){
     int c[5];
     for (int i=0; i<5; i++) cin>>c[i];
-    cout<<c[1]+c[2];
+    
+    printf("%d", 5/2);
+           return 0;
 }
