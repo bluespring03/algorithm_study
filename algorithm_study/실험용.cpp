@@ -9,9 +9,10 @@
 #include<string>
 using namespace std;
 int main(){
-    int c[5];
-    for (int i=0; i<5; i++) cin>>c[i];
     
-    printf("%d", 5/2);
+    string x; cin>>x;
+    
+    cout<<x%10;
+    
            return 0;
 }
