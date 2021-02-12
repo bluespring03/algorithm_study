@@ -11,8 +11,8 @@ using namespace std;
 int main(){
     
     string x; cin>>x;
-    
-    cout<<x%10;
+    x=x+'1';
+    cout<<x;
     
            return 0;
 }

@@ -5,6 +5,8 @@
 //  Created by 수연 on 2021/02/11.
 //
 
+
+#include<string>
 #include <iostream>
 using namespace std;
 
@@ -18,15 +20,18 @@ long fact(int n){
 int main(){
     int n; cin>>n;
     n=fact(n);
+
     
-    int cnt1=0, cnt2=0;
+    int cnt1=0;
+    string a=to_string(n);
+    a=a+'1';   //맨 마지막들만 0인 경우가 반복문에는 포함되지 않아서 따로 1을 추가해 줌.
     
-    for(int i=0; n!=0;i++){
-        if(n%10==0)
+    for(int i=0; a[i]!='\0';i++){
+        if(a[i]==48 && a[i+1]!=48)
             cnt1++;
     }
-    
-   
+
+    cout<<cnt1;
     
     return 0;
 }
