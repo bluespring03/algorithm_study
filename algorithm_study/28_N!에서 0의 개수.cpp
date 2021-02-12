@@ -21,17 +21,16 @@ int main(){
     int n; cin>>n;
     n=fact(n);
 
-    
-    int cnt1=0;
+    int cnt=0;
     string a=to_string(n);
-    a=a+'1';   //맨 마지막들만 0인 경우가 반복문에는 포함되지 않아서 따로 1을 추가해 줌.
+    a=a+'1';   //맨 마지막 0인 경우가 반복문에는 포함되지 않아서 따로 1을 추가해 줌.
     
     for(int i=0; a[i]!='\0';i++){
         if(a[i]==48 && a[i+1]!=48)
-            cnt1++;
+            cnt++;
     }
 
-    cout<<cnt1;
+    cout<<cnt<<endl;
     
     return 0;
 }

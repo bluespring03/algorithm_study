@@ -11,7 +11,7 @@ using namespace std;
 int main(){
     
     string x; cin>>x;
-    x=x+'1';
+    x=x*3;
     cout<<x;
     
            return 0;
