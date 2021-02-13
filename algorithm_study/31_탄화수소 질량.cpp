@@ -19,11 +19,11 @@ int main(){
     if(hc[1]=='H')
         sum=12+stoi(hc.substr(2,length));
     else{
-        for(int i=1;hc[i]!='H';i++){
-            cnt++;
-        }
-        
+        for(int i=1;hc[i]!='H';i++) cnt++;
+        sum=12*stoi(hc.substr(1,cnt))+stoi(hc.substr(cnt+2,length));
     }
     
+    
+    cout<<sum<<endl;
     return 0;
 }

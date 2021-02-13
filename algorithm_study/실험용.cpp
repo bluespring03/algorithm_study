@@ -11,8 +11,8 @@ using namespace std;
 int main(){
     
     string x; cin>>x;
-    x=x*3;
-    cout<<x;
+
+    cout<<x[1];
     
            return 0;
 }
