@@ -8,11 +8,20 @@
 #include <iostream>
 #include<string>
 using namespace std;
+
 int main(){
     
-    string x; cin>>x;
-
-    cout<<x[1];
+    int b[10];
+    for(int i=0;i<3;i++) cin>>b[i];
+    string a;
+    //string a=to_string(n)
+    
+    for(int i=0;i<3;i++)
+    a+=to_string(b[i]) ;
+    
+    
+    
+    cout<<a<<endl;
     
            return 0;
 }
