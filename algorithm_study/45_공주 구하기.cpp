@@ -1,4 +1,4 @@
-//
+//또 모르겠디
 //  45_공주 구하기.cpp
 //  algorithm_study
 //
@@ -10,24 +10,27 @@
 using namespace std;
 
 int main(){
-    int n, k, p=0, bp=0, c=0;//p=position, bp=break point
+    int n, k, p=0, bp=0, c=0; //p=position, bp=break point
     cin>>n>>k;
 
-    vector<int>prince(n + 1);
-
-    while (1) {
+    vector<int>prince(n);
+    
+    while (true) {
         p++;
-        if (p > n)
-            p = 1;
-        if (prince[p] == 0) {
-            c++;
-            if (c == k) {
-                prince[p] = 1;
-                c = 0;
-                bp++;}
-        }
         if (bp == n - 1) break;
+        
+        if (p==k){
+            prince[p-1]=1;
+            bp++;
+        }
+        else if (p>k){
+            p=0;
+        }
     }
-    cout<<p;
+    //TODO:인덱스 출력해야 함
+    /*for(int i=0;i<n;i++){
+        if(prince[i]==0) cout<<인덱스를 출력;}*/
+
     return 0;
 }
+

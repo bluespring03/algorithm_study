@@ -1,4 +1,5 @@
-//
+
+
 //  42_이분검색.cpp
 //  algorithm_study
 //
@@ -7,29 +8,29 @@
 
 #include <iostream>
 using namespace std;
+#include <vector>
+#include <algorithm>
 
-void swap(int *p, int *q){
-    int tmp;
+int main()
+{
+    int n,m; cin >> n>>m;
+    vector<int> x(n);
+    for(int i=0; i<n;i++) cin >> x[i];
     
-    tmp=*p;
-    *p=*q;
-    *q=tmp;
-}
-
-int main(){
-    int N,M, n[1000000]; cin>>N>>M;
-    for(int i=0;i<N;i++) cin>>n[i];
+    sort(x.begin(),x.end());
     
-    for(int i=0;i<N;i++){
-        for(int j=0;j<N-i-1; j++){
-        if(n[j]>n[j+1]) swap(&n[j],&n[j+1]);
-        }//버블 정렬 이용
-            
+    int mid=(n+1)/2;
+    
+    while(true){
+        if(m==x[mid])
+            break;
+        else if (m>x[mid])
+            mid=mid+ (n-mid)/2;
+        else
+            mid=(mid+1)/2;
     }
-    int mid=N/2;
-    while(true)
-        if
-        
-    }
+    
+    cout<<mid+1;
+    
     return 0;
 }

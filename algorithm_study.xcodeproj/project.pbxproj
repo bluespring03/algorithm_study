@@ -21,6 +21,7 @@
 /* Begin PBXFileReference section */
 		0427659F25D7A44900647820 /* 32_선택정렬.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "32_선택정렬.cpp"; sourceTree = "<group>"; };
 		042765AC25D8510C00647820 /* 33_3등의 성적은?.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "33_3등의 성적은?.cpp"; sourceTree = "<group>"; };
+		042E78C425DC02D000FF88AB /* 46_카카오 먹방.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "46_카카오 먹방.cpp"; sourceTree = "<group>"; };
 		0434AC4E25D120AC00DCB4EE /* 24_Jolly Jumpers.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "24_Jolly Jumpers.cpp"; sourceTree = "<group>"; };
 		0434AC6025D25F4F00DCB4EE /* 27_N!의 표현법.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "27_N!의 표현법.cpp"; sourceTree = "<group>"; };
 		04498BEF25CDA047006636BB /* 17_선생님 퀴즈.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "17_선생님 퀴즈.cpp"; sourceTree = "<group>"; };
@@ -116,6 +117,7 @@
 				04FD195025D92E8B00231F0A /* 38_Inversion Sequence.cpp */,
 				04FD195E25D953F900231F0A /* 42_이분검색.cpp */,
 				04FD196125D95AA300231F0A /* 45_공주 구하기.cpp */,
+				042E78C425DC02D000FF88AB /* 46_카카오 먹방.cpp */,
 			);
 			path = algorithm_study;
 			sourceTree = "<group>";
