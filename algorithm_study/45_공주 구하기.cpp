@@ -5,6 +5,7 @@
 //  Created by 수연 on 2021/02/14.
 //
 
+//45
 #include <iostream>
 #include<vector>
 using namespace std;
@@ -27,7 +28,7 @@ int main(){
             p=0;
         }
     }
-    //TODO:인덱스 출력해야 함
+    //TODO:인덱스 출력?
     /*for(int i=0;i<n;i++){
         if(prince[i]==0) cout<<인덱스를 출력;}*/
 
