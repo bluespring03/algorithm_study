@@ -4,7 +4,7 @@
 //
 //  Created by 수연 on 2021/03/21.
 //
-//FIXME: 함수
+//FIXME: push pop 함수
 #include <iostream>
 using namespace std;
 int stack[100],top=-1;

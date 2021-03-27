@@ -5,19 +5,24 @@
 //  Created by 수연 on 2021/02/04.
 //
 
-#include<iostream>
+#include<stdio.h>
+#include<vector>
+#include<algorithm>
 using namespace std;
-
-int main(){
-    
-    int a[4];
-    
-    for(int i=1; i<=2; i++) cin>>a[i];
-
-    if (a[0]==48)
-        cout<<"!";
-    else
-        cout<<"@";
-    
+int map[21][21];
+int main() {
+    freopen("input.txt", "rt", stdin);
+    int n, m, a, b, c, i, j;
+    scanf("%d %d", &n, &m);
+    for(i=1; i<=m; i++){
+        scanf("%d %d %d", &a ,&b, &c);
+        map[a][b]=c;
+    }
+    for(i=1; i<=n; i++){
+        for(j=1; j<=n; j++){
+            printf("%d ", map[i][j]);
+        }
+        printf("\n");
+    }
     return 0;
 }

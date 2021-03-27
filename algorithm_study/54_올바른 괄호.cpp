@@ -18,6 +18,9 @@ int pop(){
 }
 
 int main(){
+    int c=0;
     string a; cin>>a;
+    for (int i=0; a[i]!='\0'; i++)
     
+    if
 }
