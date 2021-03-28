@@ -6,6 +6,7 @@
 //
 //FIXME: push pop 함수
 #include <iostream>
+// #include <stack>
 using namespace std;
 int stack[100],top=-1;
 
@@ -13,21 +14,23 @@ void push(int n){
     top++;
     stack[top]=n;
 }
-int pop(){
+
+void pop(){
     top--;
-    return stack[top];
 }
 
 int main(){
     int n,k; cin>>n>>k;
     char str[20]="0123456789ABCDEF";
+    
     while(n>0){
         push(n%k);
         n=n/k;
     }
     while(top!=-1){
-        cout<<str[pop()];
-        }
+        cout<<stack[top]; //16진수일 땐: str[stack[top]];
+        pop();
+    }
     
     return 0;
 }
